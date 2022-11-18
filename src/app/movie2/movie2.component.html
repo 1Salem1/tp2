@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+  <div *ngFor="let item of movies; index as i; " class="wrapper">
+    <div   class="product-img">
+      <img src="{{item.Poster}}" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>{{item.Title}}</h1>
+        <h2>by {{item.Director}}</h2>
+<p>{{item.Pilot}}</p>
+    </div>
+      <div class="product-price-btn">
+        <p><span><span>{{item.Year}}</span></span></p>
+  
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
